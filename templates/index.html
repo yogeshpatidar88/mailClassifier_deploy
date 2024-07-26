@@ -10,9 +10,12 @@
   <title>Email_Spam Classifier</title>
 </head>
 <style>
-  body {
+  *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+  }
+  body {
     background: url(../static/leaf.avif);
     position: cover;
     color: light rgb(25, 23, 23);
@@ -36,6 +39,7 @@
     padding: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    flex-wrap: wrap;
   }
 
   .navbar img {
@@ -43,55 +47,8 @@
     margin-right: 20px;
   }
 
-  .navbar h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  }
-
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      height: auto;
-      padding: 1rem 0.5rem;
-    }
-
-    .navbar img {
-      margin-bottom: 10px;
-      margin-right: 0;
-    }
-
-    .navbar h1 {
-      font-size: 1.5rem;
-    }
-  }
-
-  /*.navbar {
-    top: 0;
-    background-color: #87CEEB;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(114, 109, 103);
-    background-image: url(../static/bg.jpg);
-    position: center;
-    color: rgb(178, 214, 246);
-    border-bottom: 2px solid #333;
-    padding: 1rem 0;
-    background-image: cro;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: #fff;
-    border-bottom: #fff;
-
-  }
-
-  .navbar img {
-    border-radius: 5px;
-    margin-right: 10px;
-  }
-*/
+  
+  
   .container::before {
 
     background: url(../static/spamemail.jpeg) no-repeat center center/cover;
@@ -107,6 +64,7 @@
 
   .navbar p {
     font-size: 50px;
+    color: #7fb3d3;
   }
 
   .box {
@@ -122,6 +80,7 @@
     font-size: 40px;
     color: rgb(248, 240, 240);
     font: bold;
+    margin-bottom: 30px;
   }
 
   .check {
@@ -205,8 +164,9 @@
   }
 
   .con {
-    margin-top: 120px;
+    margin-top: 60px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     width: 80%;
@@ -219,6 +179,7 @@
     border-radius: 15px;
     background-color: #c1b1b1;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
   }
 
   /* Individual Flex Box Styling */
@@ -237,6 +198,7 @@
   .about {
     background-color: #e0f7fa;
     border: 2px solid #4dd0e1;
+    margin-right: 20px;
   }
 
   .about1 {
@@ -255,31 +217,28 @@
     border-radius: 10px;
   }
 
-  p {
-    font-size: 1.1rem;
-    color: #7fb3d3;
-  }
+  
 
   /* Responsive Styles */
-  @media (max-width: 768px) {
-    .con {
-      flex-direction: column;
-    }
+  
 
-    .about,
-    .about1 {
-      width: 100%;
-      margin-bottom: 20px;
+  @media (max-width: 992px) and (min-width: 639px) {
+    .navbar{
+      height: 110px;
     }
-  }
+    .navbar img{
+      height: 50px;
 
-  @media (max-width: 992px) {
+    }
+    .navbar p{
+      font-size: 40px;
+    }
     .box p {
       font-size: 30px;
     }
 
     .form1 textarea {
-      width: 90%;
+      width: 85%;
       font-size: 14px;
     }
 
@@ -289,7 +248,7 @@
     }
 
     .con {
-      width: 90%;
+      width: 75%;
       margin-left: auto;
       margin-right: auto;
     }
@@ -299,44 +258,123 @@
       width: 80%;
       margin-bottom: 20px;
     }
-  }
-
-  @media (max-width: 576px) {
-    .navbar h1 {
-      font-size: 1.2rem;
+    .about img{
+      height: 130px;
     }
+    .about1 img{
+      height: 130px;
+    }
+    footer{
+      margin-bottom: 10px;
+    }
+    footer h2{
+      font-size: 20px;
+    }
+  }
+  @media  (max-width: 639px) and (min-width:519px) {
+    .navbar{
+      height: 110px;
+    }
+    .navbar img{
+      height: 40px;
 
+    }
+    .navbar p{
+      font-size: 30px;
+    }
     .box p {
       font-size: 25px;
     }
 
     .form1 textarea {
-      width: 100%;
-      font-size: 12px;
+      width: 75%;
+      height: 200px;
+      font-size: 14px;
     }
 
     .button-29 {
-      font-size: 14px;
-      height: 35px;
+      margin-top: 20px;
+      font-size: 16px;
+      height: 40px;
     }
 
     .con {
-      width: 100%;
-      padding: 10px;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .about,
+    .about1 {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+    .about img{
+      height: 110px;
+    }
+    .about1 img{
+      height: 110px;
+    }
+    footer{
+      margin-bottom: 10px;
+    }
+    footer h2{
+      font-size: 17px;
+    }
+  }
+  @media (max-width:519px) {
+    .navbar{
+      height: 130px;
+    }
+    .navbar img{
+      height: 40px;
+      margin-bottom: 10px;
+
+    }
+    .navbar p{
+      font-size: 27px;
+    }
+    .box p {
+      font-size: 24px;
+    }
+
+    .form1 textarea {
+      width: 85%;
+      height: 150px;
+      font-size: 14px;
+    }
+
+    .button-29 {
+      margin-top: 20px;
+      font-size: 16px;
+      height: 40px;
+    }
+
+    .con {
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .about,
     .about1 {
       width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
-
-    .about p,
-    .about1 p {
-      font-size: 0.9rem;
+    .about img{
+      height: 90px;
+    }
+    .about1 img{
+      height: 90px;
+    }
+    footer{
+      margin-bottom: 10px;
+    }
+    footer h2{
+      font-size: 14px;
     }
   }
+  
 
   footer {
     margin-top: 10px;
